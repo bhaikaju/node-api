@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "5d7a514b5d2c12c7449be020",
+    "totalPrice": 299.99,
+    "paid": true,
+    "items":["5d713995b721c3bb38c1f5d0", "5d713a66ec8f2b88b8f830b8"],
+    "user": "5f7eb57c86c4baf75a29b4e3"
+  },
+  {
+    "_id": "5d7a514b5d2c12c7449be022",
+    "totalPrice": 299.99,
+    "paid": true,
+    "items":["5d713a66ec8f2b88b8f830b8"],
+    "user": "5d7a514b5d2c12c7449be042"
+  }
+]

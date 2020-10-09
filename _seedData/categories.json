@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "5d725a4a7b292f5f8ceff789",
+    "title": "Electronics",
+    "description": "This is electronics category"
+  },
+  {
+    "_id": "5d725c84c4ded7bcb480eaa0",
+    "title": "Gaming",
+    "description": "This is gaming category"
+  },
+  {
+    "_id": "5d725cb9c4ded7bcb480eaa1",
+    "title": "Clothing",
+    "description": "This is clothing category"
+  },
+  {
+    "_id": "5d725cd2c4ded7bcb480eaa2",
+    "title": "Bags",
+    "description": "This is bag category"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "5d7a514b5d2c12c7449be042",
+    "first_name": "Admin",
+    "last_name": "Account",
+    "email": "admin@gmail.com",
+    "password": "123456"
+  },
+  {
+    "_id": "5f7eb57c86c4baf75a29b4e3",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "jdoe@gmail.com",
+    "password": "123456"
+  }
+]

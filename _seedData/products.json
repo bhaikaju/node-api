@@ -1,0 +1,98 @@
+[
+  {
+    "_id": "5d713995b721c3bb38c1f5d0",
+    "title": "PlayStation 4",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the best gaming console you can own, created by Sony",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830b8",
+    "title": "Xbox One",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the most popular gaming console you can own, created by Microsoft",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5f7393d26f1ecc2ef503e8b9",
+    "title": "PlayStation 4",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the best gaming console you can own, created by Sony",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5f7393ead30b3f34b5f617b3",
+    "title": "Xbox One",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the most popular gaming console you can own, created by Microsoft",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5f73942f4c2643c123047191",
+    "title": "PlayStation 4",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the best gaming console you can own, created by Sony",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5f73943499a813dc7c61469c",
+    "title": "Xbox One",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the most popular gaming console you can own, created by Microsoft",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5f73943a4fc6d18fc6f03a0c",
+    "title": "PlayStation 4",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the best gaming console you can own, created by Sony",
+    "short_desc": "Budget console for gamers"
+  },
+  {
+    "_id": "5f739441183e8f6b931040a2",
+    "title": "Xbox One",
+    "category": ["5d725a4a7b292f5f8ceff789", "5d725c84c4ded7bcb480eaa0"],
+    "price": 299.99,
+    "onSale": false,
+    "sale_price": 0,
+    "main_image": "",
+    "images": [],
+    "description": "This is the most popular gaming console you can own, created by Microsoft",
+    "short_desc": "Budget console for gamers"
+  }
+]

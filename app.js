@@ -21,10 +21,15 @@ app.use(morgan('dev'));
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-    console.log('Got the request from default route');
-})
+// Load Routes
+const productRoute = require('./routes/products');
+app.use('/api/v1/products', productRoute);
 
-app.listen(5000, () => {
-    console.log('Server running on port 5000');
+
+
+// Define Port Number
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
