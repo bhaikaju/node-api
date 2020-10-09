@@ -1,0 +1,16 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "Rest API using NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Indranil",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
