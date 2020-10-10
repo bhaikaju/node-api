@@ -16,7 +16,7 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-
+app.use(express.urlencoded({extended: false}))
 app.use(morgan('dev'));
 
 app.use(cors());
@@ -24,7 +24,6 @@ app.use(cors());
 // Load Routes
 const productRoute = require('./routes/products');
 app.use('/api/v1/products', productRoute);
-
 
 
 // Define Port Number
