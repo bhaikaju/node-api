@@ -1,4 +1,5 @@
 const Product = require('../models/Product');
+const {isEmptyObject} = require("mongoose");
 
 // To Get All Product
 exports.getProducts = async (req, res) => {
@@ -28,7 +29,7 @@ exports.createProduct = async (req, res) => {
 
     const product = await Product.create(req.body);
 
-    if (product) {
+    if (!isEmptyObject(product)) {
         res.status(200).json({
             success: true,
             product: product
