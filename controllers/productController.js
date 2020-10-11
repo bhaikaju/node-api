@@ -1,16 +1,27 @@
 const Product = require('../models/Product');
-const {isEmptyObject} = require("mongoose");
+const CustomError = require("../utilities/CustomError");
+const asyncMiddleware = require('../middlewares/asyncMiddleware');
 
 // To Get All Product
-exports.getProducts = async (req, res) => {
-    try {
-        const prod = await Product.find({});
-        res.json({products: prod});
-    } catch (err) {
-        res.json({error: 'Something went wrong'});
-    }
+exports.getProducts = asyncMiddleware(async (req, res, next) => {
 
-}
+    const prod = await Product.find({});  // Array of products
+
+    if (!prod) {
+        const error = new CustomError(`Something went wrong, try again later.`, 500);
+        res.status(error.statusCode).json({
+            success: false,
+            error: error.message
+        });
+    }
+    res.status(200).json({
+        success: true,
+        count: prod.length,
+        products: prod
+    })
+
+})
+;
 
 // Get Single Product
 

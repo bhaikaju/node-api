@@ -29,7 +29,7 @@ const importData = async () => {
 // Delete the data from DB
 const deleteData = async () => {
     try {
-        await Product.deleteMany();
+        await Product.deleteMany({});
         console.log(`Data successfully deleted`.red.inverse);
         process.exit();
     } catch (err) {
