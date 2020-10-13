@@ -24,9 +24,11 @@ app.use(cors());
 
 // Load Routes
 const productRoute = require('./routes/products');
+const userRoute = require('./routes/users');
 
 // Use Routes
 app.use('/api/v1/products', productRoute);
+app.use('/api/v1/users', userRoute);
 
 
 // Define Port Number

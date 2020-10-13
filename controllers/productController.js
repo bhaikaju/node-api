@@ -5,7 +5,9 @@ const asyncMiddleware = require('../middlewares/asyncMiddleware');
 // To Get All Product
 exports.getProducts = asyncMiddleware(async (req, res, next) => {
 
-    const prod = await Product.find({});  // Array of products
+    const prod = await Product.find({}).populate({
+        path: 'category'
+    });  // Array of products
 
     if (!prod) {
         const error = new CustomError(`Something went wrong, try again later.`, 500);
@@ -17,11 +19,10 @@ exports.getProducts = asyncMiddleware(async (req, res, next) => {
     res.status(200).json({
         success: true,
         count: prod.length,
-        products: prod
+        data: prod
     })
 
-})
-;
+});
 
 // Get Single Product
 
@@ -36,15 +37,19 @@ exports.getSingleProduct = async (req, res) => {
     }
 }
 
-exports.createProduct = async (req, res) => {
+// Create New Product
+
+exports.createProduct = asyncMiddleware(async (req, res, next) => {
 
     const product = await Product.create(req.body);
 
-    if (!isEmptyObject(product)) {
+    if (product) {
         res.status(200).json({
             success: true,
             product: product
         })
+    } else {
+        next(new CustomError('Something went wrong, try again later', 500));
     }
 
-}
+})
