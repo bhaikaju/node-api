@@ -9,7 +9,10 @@ const {
 } = require('../controllers/productController');
 const moreResults = require('../middlewares/moreResults');
 router.route('/')
-    .get(moreResults(Product, 'category'), getProducts)
+    .get(moreResults(Product, {
+        path: 'category',
+        select: 'title'
+    }), getProducts)
     .post(createProduct);
 
 
